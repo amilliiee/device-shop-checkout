@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Apple checkout</title>
+  <link href='./style.css' rel='stylesheet'>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="checkout">
+      <h2>Checkout</h2>
+      <p>3 items</p>
+    </div>
+    <div class="list">
+      <div class="items">
+        <!-- phone -->
+        <div class="phone">
+          <div class="item-pic">
+            <img src="./img/Gold.png" alt="iPhone 12 Pro">
+          </div>
+          <!-- phone info -->
+          <div class="item-info">
+            <div class="name-quant">
+              <span>iPhone 12 Pro</span>
+              <p class="color">Golden</p>
+              <p>x 1</p>
+            </div>
+            <!-- phone price -->
+            <div class="price">
+              <span>$999.00</span>
+              <img src="./img/close-icon.svg" alt="close icon">
+            </div>
+          </div>
+        </div>
+        <!-- watch -->
+        <div class="watch">
+          <div class="item-pic">
+            <img src="./img/Blue.png" alt="Apple watch">
+          </div>
+          <!-- watch info -->
+          <div class="item-info">
+            <div class="name-quant">
+              <span>Apple Watch</span>
+              <p class="color">Blue</p>
+              <p>x 1</p>
+            </div>
+            <!-- watch price -->
+            <div class="price">
+              <span>$399.00</span>
+              <img src="./img/close-icon.svg" alt="close icon">
+            </div>
+          </div>
+        </div>
+        <!-- imac -->
+        <div class="imac">
+          <div class="item-pic">
+            <img src="./img/iMac=Front 1.png" alt="iMac">
+          </div>
+          <div class="item-info">
+            <div class="name-quant">
+              <span>iMac</span>
+              <p class="color">Green</p>
+              <p>x 1</p>
+            </div>
+            <div class="price">
+              <span>$1199.00</span>
+              <img src="./img/close-icon.svg" alt="close icon">
+            </div>
+          </div>
+        </div>
+        <!-- break line -->
+        <hr/>
+        <!-- coupon -->
+        <form action="submit" id="checkout">
+          <input type="text" name="code" placeholder="Enter coupon code">
+          <button>Apply coupon</button>
+        </form>
+        <!-- final prices -->
+        <div class="final">
+          <div class="cost-types">
+            <p>Sub total</p>
+            <p>Tax</p>
+            <span>Total</span>
+          </div>
+          <div class="cost-prices">
+            <p>$2597.00</p>
+            <p>$623.28</p>
+            <span>$3220.28</span>
+          </div>
+        </div>
+      </div>
+      <!-- contact form -->
+      <div id="contact-form">
+        <p id="contact-info">Contact Information</p>
+        <form action="submit" id="contact">
+          <label for="name">First & Last name</label>
+          <input type="text" name="name" placeholder="Enter first & last name">
+          <label for="email">Email Address</label>
+          <input type="email" name="email" placeholder="Enter email address">
+          <div class="location">
+            <div class="country">
+              <label for="country">Country</label>
+              <select name="country">
+                <option value="Finland" selected>Finland</option>
+                <option value="USA">United States</option>
+                <option value="Canada">Canada</option>
+              </select>
+            </div>
+            <div class="zip">
+              <label for="zip-code">Postal Code</label>
+              <input type="text" name="zip-code" placeholder="00270">
+            </div>
+          </div>
+          <button id="continue">Continue</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
